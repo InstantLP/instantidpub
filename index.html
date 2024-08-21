@@ -1,17 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Album Index</title>
+    <title>Family Group Links</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f9fa;
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
         }
         .card {
             transition: transform 0.2s;
@@ -22,17 +20,31 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h1 class="card-title mb-4">Photo Album Index</h1>
-                        <p class="card-text mb-4">Welcome to the photo album index. Click below to view the family group links.</p>
-                        <a href="html/family_links.html" class="btn btn-primary btn-lg">View Family Links</a>
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Welcome</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+            <div class="col">
+                <a href="html/world_links.html" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="./img/icon/world.jpg" class="card-img-top" alt="world">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">world</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+    
+            <div class="col">
+                <a href="html/family_links.html" class="text-decoration-none"">
+                    <div class="card h-100">
+                        <img src="./img/icon/family.jpg" class="card-img-top" alt="family">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">family</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>    
         </div>
     </div>
 </body>
